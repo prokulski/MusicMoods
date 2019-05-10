@@ -91,7 +91,7 @@ albums_moods <- tibble()
 
 for(i in seq_len(nrow(moods_df))) {
 
-  cat(i, "\r")
+  cat(i, " / ", nrow(moods_df), "   \r")
 
   tmp_df <- get_mood_table(moods_df$mood[[i]], moods_df$url_ajax[[i]])
 
