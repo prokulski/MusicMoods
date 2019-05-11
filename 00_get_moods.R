@@ -72,7 +72,6 @@ get_mood_table <- function(mood_name, mood_url) {
            {
            }
     )
-
   }
 
   return(tibble(artist = album_artist,
